@@ -1,14 +1,21 @@
-### `npm start`
-
 # Projet Fil Rouge - ADRAR | RedMush
 
 Projet fil rouge pour ma formation de dev web a l'**ADRAR** pole numerique
 
-## Fonctionnalités á faire
+##  [TODO] Pages :
+- Accueil
+- Homme
+- Femme
+- Enfant
+- Homme
+- Inscripiton
+- Nouveautes
+- Promo
 
+## [TODO] Fonctionnalités :
+- Caroussel
 - Formulaire de contact
-- Boutique
-- Fonctionnalité 3
+- 
 
 ## Installation
 
