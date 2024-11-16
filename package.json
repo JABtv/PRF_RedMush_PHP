@@ -1,0 +1,23 @@
+{
+  "name": "pfr_redmush_php",
+  "version": "1.0.0",
+  "description": "Une brève description de ce que fait ton projet et à quoi il sert.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JABtv/PRF_RedMush_PHP.git"
+  },
+  "keywords": [],
+  "author": "Tom ANDRES",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JABtv/PRF_RedMush_PHP/issues"
+  },
+  "homepage": "https://github.com/JABtv/PRF_RedMush_PHP#readme",
+  "devDependencies": {
+    "prettier": "3.3.3"
+  }
+}
