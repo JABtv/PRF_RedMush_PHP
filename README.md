@@ -13,7 +13,10 @@ Projet fil rouge pour ma formation de dev web a l'**ADRAR** pole numerique
 - Inscripiton
 - Nouveautes
 - Promo
-- - HEADER - FOOTER
+
+
+
+- HEADER - FOOTER
 
 ---
 ## [TODO] Fonctionnalités :
