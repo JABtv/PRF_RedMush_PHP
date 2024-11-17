@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "Oswald";
+  src: url("public/assets/fonts/Oswald.ttf");
+}
+@font-face {
+  font-family: "NotoSans";
+  src: url("public/assets/fonts/NotoSans.ttf");
+}
+p {
+  font-family: "NotoSans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+header {
+  background-color: #000;
+  width: 100%;
+}
+header p {
+  color: #fff;
+  background-color: black;
+  border: 5px solid black;
+  text-align: center;
+  font-size: 0.8rem;
+  font-family: "Oswald", sans-serif;
+}
+header nav.navbar {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2em 0 2em;
+}
+header nav.navbar div {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+header nav.navbar div.left,
+header nav.navbar div.right {
+  gap: 1em;
+}
+header nav.navbar img {
+  height: 50px;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+header nav.navbar h1 {
+  font-family: "Oswald", sans-serif;
+  cursor: pointer;
+}
+header nav.navbar input {
+  display: none;
+}
+header nav.navbar button {
+  border: none;
+  background-color: transparent;
+}
+
+/* FOOTER */
+
+/*# sourceMappingURL=style.css.map */
