@@ -1,7 +1,9 @@
 # Projet Fil Rouge - ADRAR | RedMush
 
+---
 Projet fil rouge pour ma formation de dev web a l'**ADRAR** pole numerique
 
+---
 ##  [TODO] Pages :
 - Accueil
 - Homme
@@ -12,10 +14,17 @@ Projet fil rouge pour ma formation de dev web a l'**ADRAR** pole numerique
 - Nouveautes
 - Promo
 
+
+
+- HEADER - FOOTER
+
+---
 ## [TODO] Fonctionnalités :
 - Caroussel
 - Formulaire de contact
-- 
+-
+
+---
 
 ## Installation
 
