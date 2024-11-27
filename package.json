@@ -19,5 +19,8 @@
   "homepage": "https://github.com/JABtv/PRF_RedMush_PHP#readme",
   "devDependencies": {
     "prettier": "3.3.3"
+  },
+  "dependencies": {
+    "sass": "^1.81.0"
   }
 }

@@ -9,7 +9,7 @@
         name="description"
         content="Le streetwear réinventé. Découvre notre collection de vêtements et d'accessoires streetwear pour un style urbain et affirmé. Des pièces uniques et tendances pour te démarquer au quotidien." />
     <!-- Link Perso. -->
-    <link rel="stylesheet" href="../../public/src/style/style.css" />
+    <link rel="stylesheet" href="public/src/style/style.css" />
 </head>
 <body>
 <header>
@@ -17,16 +17,16 @@
     <nav class="navbar">
       <div class="left">
         <img
-          src="../../public/assets/images/icons/black/iconUser.png"
+          src="public/assets/images/icons/black/iconUser.png"
           alt="User" />
         <img
-          src="../../public/assets/images/icons/black/iconShoppingBag.png"
+          src="public/assets/images/icons/black/iconShoppingBag.png"
           alt="shoppingBag" />
       </div>
       <div class="center">
         <img
-          src="../../public/assets/images/Logo/logoGimpB.svg"
-          alt="Logo"
+          src="public/assets/images/Logo/logoGimpB.svg"
+          alt="Logo"/>
         <h1>RedMush</h1>
       </div>
       <div class="right">
@@ -34,7 +34,7 @@
           <input type="text" name="searchBar">
           <button>
             <img
-              src="../../public/assets/images/icons/black/iconSearch.png"
+              src="public/assets/images/icons/black/iconSearch.png"
               alt="search"
               class="iconSearch" />
           </button>
@@ -42,7 +42,7 @@
 
         </label>
         <img
-          src="../../public/assets/images/icons/black/iconMenu.png"
+          src="public/assets/images/icons/black/iconMenu.png"
           alt="burger" />
       </div>
     </nav>

@@ -1,17 +1,19 @@
-$red: #D71C10;
-// Carroussel
+$red: #d71c10;
+// CARROUSEL
 
 main {
   section.carousel {
     background-color: white;
+    white-space: 100dvw;
     article.slider {
-      width: 100dvw;
+      width: 100%;
       max-width: 100dvw;
       height: 85dvh;
       margin: auto;
       position: relative;
       overflow: hidden;
     }
+
     div.carouselList {
       position: absolute;
       width: max-content;
@@ -21,12 +23,14 @@ main {
       display: flex;
       transition: 1s;
     }
+
     div.carouselList img {
       width: 100dvw;
       max-width: 100dvw;
       height: 100%;
       object-fit: cover;
     }
+
     div.carouselBtn {
       position: absolute;
       top: 45%;
@@ -35,6 +39,7 @@ main {
       display: flex;
       justify-content: space-between;
     }
+
     div.carouselBtn button {
       width: 25px;
       height: 25px;
@@ -45,6 +50,7 @@ main {
       cursor: pointer;
       border: 1px white solid;
     }
+
     ul.dots {
       position: absolute;
       bottom: 10px;
@@ -68,9 +74,119 @@ main {
       background-color: black;
       border: 1px white solid;
     }
+
     ul.dots li.active {
       width: 30px;
       background-color: $red;
+    }
+  }
+
+  //  NOUVEAUTE
+
+  section.nouveaute,
+  section.promo {
+    margin: 5em;
+    h2 {
+      font-size: 32px;
+      font-weight: bold;
+    }
+    div#card {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 6.75em;
+      margin: 1em auto;
+      div.card {
+        display: flex;
+        height: auto;
+        width: 300px;
+        border: solid black;
+        div.cardContent {
+          padding: 1em;
+          img.cardImg {
+            width: 268px;
+            height: 500px;
+            aspect-ratio: 1/3;
+            object-fit: cover;
+          }
+          p {
+            font-family: "Oswald", sans-serif;
+          }
+          p.title {
+            font-size: 24px;
+            font-weight: normal;
+          }
+          p.price {
+            font-size: 32px;
+            font-weight: lighter;
+            color: $red;
+          }
+          span {
+            font-size: 18px;
+            text-decoration: line-through;
+          }
+
+          div.colors {
+            display: flex;
+            justify-content: space-between;
+            input {
+              border: 1px solid black;
+              height: 30px;
+              width: 30px;
+              cursor: pointer;
+            }
+            button {
+              height: 30px;
+              width: 65px;
+              cursor: pointer;
+              background-color: black;
+              border: 1px solid black;
+              img {
+                width: 20px;
+                object-fit: cover;
+                aspect-ratio: 1/1;
+              }
+            }
+            input:hover,
+            button:hover {
+              border: 1px solid white;
+            }
+            input:active,
+            button:active {
+              border: 1px solid black;
+            }
+            .white {
+              background-color: white;
+            }
+            .black {
+              background-color: black;
+            }
+            .red {
+              background-color: $red;
+            }
+          }
+        }
+      }
+    }
+    button {
+      height: 50px;
+      width: 690px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
+//TODO VERSION MOBILE
+
+@media (max-width: 1080px) {
+  section.nouveaute {
+    div#card {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-column-gap: 65px;
+      grid-row-gap: 65px;
     }
   }
 }

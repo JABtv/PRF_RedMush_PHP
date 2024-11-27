@@ -10,7 +10,7 @@
   src: url("public/assets/fonts/NotoSans.ttf");
 }
 
-p{
+p {
   font-family: "NotoSans", sans-serif;
 }
 
@@ -19,15 +19,15 @@ h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
   font-family: "Oswald", sans-serif;
 }
 
 // INITIALISATION VARIABLE
 
-$white: #F0F0F0;
+$white: #f0f0f0;
 $black: #0e0e0e;
-$red: #D71C10;
+$red: #d71c10;
 
 // TYPOGRAPHY
 
@@ -41,21 +41,42 @@ $p-font-size: 0.8rem;
 
 //INITIALISATION HTML
 
-*{
+* {
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
 }
 
-.row{
+body {
+  background-color: $white;
+}
+
+.row {
   display: flex;
   flex-direction: row;
 }
 
-.col{
+.col {
   display: flex;
   flex-direction: column;
+}
+
+button {
+  border: 1px solid white;
+  color: white;
+  background-color: black;
+  font-family: "NotoSans", sans-serif;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 1px solid white;
+}
+
+button:active {
+  border: $red;
 }
 
 /* HEADER */
@@ -84,6 +105,13 @@ header {
       align-items: center;
     }
 
+    div.center {
+      h1 {
+        font-family: "Oswald", sans-serif;
+        cursor: pointer;
+      }
+    }
+
     div.left,
     div.right {
       gap: 1em;
@@ -96,20 +124,92 @@ header {
       margin: 0;
     }
 
-    h1 {
-      font-family: "Oswald", sans-serif;
-      cursor: pointer;
-    }
-    input{
+    input {
       display: none;
     }
 
-    button{
+    button {
       border: none;
       background-color: transparent;
     }
   }
 }
 
-
 /* FOOTER */
+
+nav.navFooter {
+  border-top: 1px solid black;
+  background-color: white;
+  padding: 0.5em 0;
+  ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    justify-content: center;
+    font-family: "Oswald", sans-serif;
+    gap: 3em;
+    a {
+      color: black;
+      font-size: 24px;
+    }
+  }
+}
+
+footer {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+  img {
+    height: 2em;
+    width: 2em;
+  }
+  h3 {
+    font-weight: normal;
+    align-items: start;
+  }
+  a {
+    font-weight: lighter;
+  }
+  p {
+    font-family: "Oswald", sans-serif;
+  }
+  h3,
+  p,
+  a {
+    color: white;
+  }
+  section.info {
+    ul {
+      display: flex;
+      text-decoration: none;
+      list-style: none;
+      gap: 1em;
+      align-items: center;
+      a {
+        font-family: "NotoSans", sans-serif;
+      }
+    }
+  }
+  section.resaux {
+  }
+  section.newsletter {
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25em;
+      input {
+        text-align: center;
+        color: #6d6d6d;
+        border: 1px solid white;
+      }
+    }
+  }
+
+  section.right {
+    div {
+      display: flex;
+    }
+  }
+}
