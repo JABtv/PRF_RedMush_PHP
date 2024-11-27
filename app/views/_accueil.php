@@ -159,7 +159,8 @@
           <button>VOIR PLUS</button>
         </section>
       <section class="capsule">
-
+        <img src="public/assets/images/IA_Image/capsule/capsule001.png" alt="Capsule 1"/>
+        <img src="public/assets/images/IA_Image/capsule/capsule002.png" alt="Capsule 2"/>
       </section>
 
       <section class="promo">
@@ -169,7 +170,7 @@
             <div class="cardContent">
               <img class="cardImg" src="public/assets/images/IA_Image/vetement/vetement007.jpeg" alt=""/>
               <p class="title">Titre Card</p>
-              <p class="price">14,99€<span>25€</span></p>
+              <p class="price">14,99€ <span>25€</span></p>
               <div class="colors">
                 <div>
                   <input class="white" type="button"/>
@@ -187,7 +188,7 @@
             <div class="cardContent">
               <img class="cardImg" src="public/assets/images/IA_Image/vetement/vetement008.jpeg" alt=""/>
               <p class="title">Titre Card</p>
-              <p class="price">14,99€<span>25€</span></p>
+              <p class="price">14,99€ <span>25€</span></p>
               <div class="colors">
                 <div>
                   <input class="white" type="button"/>
@@ -205,7 +206,7 @@
             <div class="cardContent">
               <img class="cardImg" src="public/assets/images/IA_Image/vetement/vetement009.jpeg" alt=""/>
               <p class="title">Titre Card</p>
-              <p class="price">14,99€<span>25€</span></p>
+              <p class="price">14,99€ <span>25€</span></p>
               <div class="colors">
                 <div>
                   <input class="white" type="button"/>
@@ -223,7 +224,7 @@
             <div class="cardContent">
               <img class="cardImg" src="public/assets/images/IA_Image/vetement/vetement010.jpeg" alt=""/>
               <p class="title">Titre Card</p>
-              <p class="price">14,99€<span>25€</span></p>
+              <p class="price">14,99€ <span>25€</span></p>
               <div class="colors">
                 <div>
                   <input class="white" type="button"/>
@@ -241,7 +242,7 @@
             <div class="cardContent">
               <img class="cardImg" src="public/assets/images/IA_Image/vetement/vetement011.jpeg" alt=""/>
               <p class="title">Titre Card</p>
-              <p class="price">14,99€<span>25€</span></p>
+              <p class="price">14,99€ <span>25€</span></p>
               <div class="colors">
                 <div>
                   <input class="white" type="button"/>
@@ -259,7 +260,7 @@
             <div class="cardContent">
               <img class="cardImg" src="public/assets/images/IA_Image/vetement/vetement012.jpeg" alt=""/>
               <p class="title">Titre Card</p>
-              <p class="price">14,99€<span>25€</span></p>
+              <p class="price">14,99€ <span>25€</span></p>
               <div class="colors">
                 <div>
                   <input class="white" type="button"/>

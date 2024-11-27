@@ -45,7 +45,6 @@ button {
   color: white;
   background-color: black;
   font-family: "NotoSans", sans-serif;
-  padding: 0.5em;
   cursor: pointer;
 }
 
@@ -148,6 +147,9 @@ footer p,
 footer a {
   color: white;
 }
+footer section h3 {
+  margin: 0 0 1em 0;
+}
 footer section.info ul {
   display: flex;
   text-decoration: none;
@@ -170,6 +172,7 @@ footer section.newsletter form input {
 }
 footer section.right div {
   display: flex;
+  gap: 0.5em;
 }
 
 /*# sourceMappingURL=style.css.map */

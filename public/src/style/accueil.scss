@@ -1,4 +1,9 @@
+// INITIALISATION VARIABLE
+
+$white: #f0f0f0;
+$black: #0e0e0e;
 $red: #d71c10;
+
 // CARROUSEL
 
 main {
@@ -136,13 +141,14 @@ main {
               cursor: pointer;
             }
             button {
+              margin-right: 0;
               height: 30px;
               width: 65px;
               cursor: pointer;
               background-color: black;
               border: 1px solid black;
               img {
-                width: 20px;
+                width: 30px;
                 object-fit: cover;
                 aspect-ratio: 1/1;
               }
@@ -170,9 +176,30 @@ main {
     }
     button {
       height: 50px;
-      width: 690px;
+      width: 700px;
       display: block;
       margin: 0 auto;
+      border: 1px solid black;
+    }
+    button:hover {
+      border: 1px solid white;
+    }
+    button:active {
+      border: 2px solid $red;
+    }
+  }
+
+  section.capsule {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    a {
+      img {
+        border-left: 4px 2px 4px 2px solid black;
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
   }
 }
@@ -182,7 +209,6 @@ main {
 @media (max-width: 1080px) {
   section.nouveaute {
     div#card {
-      display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(3, 1fr);
       grid-column-gap: 65px;

@@ -67,7 +67,6 @@ button {
   color: white;
   background-color: black;
   font-family: "NotoSans", sans-serif;
-  padding: 0.5em;
   cursor: pointer;
 }
 
@@ -180,6 +179,11 @@ footer {
   a {
     color: white;
   }
+  section {
+    h3 {
+      margin: 0 0 1em 0;
+    }
+  }
   section.info {
     ul {
       display: flex;
@@ -210,6 +214,7 @@ footer {
   section.right {
     div {
       display: flex;
+      gap: 0.5em;
     }
   }
 }
