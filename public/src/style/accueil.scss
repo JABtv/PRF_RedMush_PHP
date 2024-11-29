@@ -96,12 +96,12 @@ main {
       font-weight: bold;
     }
     div#card {
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      grid-template-rows: 1fr;
-      grid-column-gap: 6.75em;
+      display: flex;
+      overflow: auto;
       margin: 1em auto;
       border-radius: 5px;
+      gap: 3em;
+      justify-content: space-around;
       div.card:hover {
         box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Ombre plus prononcée au survol */
       }
@@ -212,7 +212,7 @@ main {
 
 //TODO VERSION MOBILE
 
-@media (max-width: 1080px) {
+@media (max-width: 800px) {
   //  NOUVEAUTE
   main {
     section.nouveaute,
@@ -225,10 +225,7 @@ main {
       }
       div#card {
         overflow: auto;
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 1fr;
-        grid-column-gap: 1em;
+        display: flex;
         margin: 1em auto;
         border-radius: 5px;
         width: 300px;

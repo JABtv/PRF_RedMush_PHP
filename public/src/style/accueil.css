@@ -81,12 +81,12 @@ main section.promo h2 {
 }
 main section.nouveaute div#card,
 main section.promo div#card {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 6.75em;
+  display: flex;
+  overflow: auto;
   margin: 1em auto;
   border-radius: 5px;
+  gap: 3em;
+  justify-content: space-around;
 }
 main section.nouveaute div#card div.card:hover,
 main section.promo div#card div.card:hover {
@@ -212,7 +212,7 @@ main section.capsule img {
   height: 100%;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 800px) {
   main section.nouveaute,
   main section.promo {
     width: auto;
@@ -226,10 +226,7 @@ main section.capsule img {
   main section.nouveaute div#card,
   main section.promo div#card {
     overflow: auto;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 1em;
+    display: flex;
     margin: 1em auto;
     border-radius: 5px;
     width: 300px;
