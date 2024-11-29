@@ -213,7 +213,7 @@ main section.capsule img {
   height: 100%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1080px) {
   main section.nouveaute,
   main section.promo {
     width: auto;

@@ -213,7 +213,7 @@ main {
 
 //TODO VERSION MOBILE
 
-@media (max-width: 800px) {
+@media (max-width: 1080px) {
   //  NOUVEAUTE
   main {
     section.nouveaute,
@@ -301,7 +301,6 @@ main {
       display: flex;
       justify-content: center;
       width: 100%;
-
       img {
         border-left: 4px 2px 4px 2px solid black;
         width: 50%;

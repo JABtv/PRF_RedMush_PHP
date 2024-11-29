@@ -16,9 +16,11 @@
     <p>FRAIS DE PORT OFFERTS À PARTIR DE 80€</p>
     <nav class="navbar">
       <div class="left">
-        <img
-          src="public/assets/images/icons/black/iconUser.png"
-          alt="User" />
+        <a href="app/controllers/_Inscription.php">
+          <img
+            src="public/assets/images/icons/black/iconUser.png"
+            alt="User" />
+        </a>
         <img
           src="public/assets/images/icons/black/iconShoppingBag.png"
           alt="shoppingBag" />

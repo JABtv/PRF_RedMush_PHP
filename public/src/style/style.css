@@ -194,12 +194,17 @@ footer#mobile {
   display: none;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1080px) {
   header nav.navbar h1 {
     display: none;
   }
-  header nav.navbar img {
-    font-size: 30px;
+  header nav.navbar div img {
+    height: 35px;
+    width: 35px;
+  }
+  header nav.navbar div.center img {
+    height: 50px;
+    width: 50px;
   }
   nav.navFooter {
     padding: 0;
@@ -222,12 +227,87 @@ footer#mobile {
   }
   footer#mobile {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    background-color: black;
   }
-  footer#mobile section.resaux {
-    padding: 2em;
-    width: 100dvw;
+  footer#mobile h3 {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    padding-bottom: 0.5em;
+  }
+  footer#mobile h2 {
+    color: white;
+  }
+  footer#mobile section#reseaux {
     background-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5em;
+  }
+  footer#mobile section#reseaux img {
+    width: 50px;
+    height: 50px;
+  }
+  footer#mobile section#reseaux div.reseaux {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+  }
+  footer#mobile section#reseaux div.icon {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    border-left: 1px solid black;
+    margin-left: -1em;
+    padding-left: 1em;
+  }
+  footer#mobile section.info {
+    border-bottom: 1px solid white;
+    padding: 1em 0 0 1em;
+  }
+  footer#mobile section.info ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    gap: 1em;
+    align-items: center;
+    margin-bottom: 1em;
+    gap: 3em;
+  }
+  footer#mobile section.info ul li a {
+    font-size: 24px;
+    font-weight: lighter;
+    font-family: "NotoSans", sans-serif;
+    color: white;
+  }
+  footer#mobile section.newsletter {
+    border-top: 1px solid white;
+    width: 100%;
+    text-align: center;
+  }
+  footer#mobile section.newsletter img {
+    height: 50px;
+  }
+  footer#mobile section.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    height: 65px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer#mobile section.newsletter form input {
+    text-align: center;
+    color: #6d6d6d;
+    border: 1px solid white;
+  }
+  footer#mobile section.newsletter form button {
+    background-color: white;
+    border: 1px solid white;
+    color: black;
   }
 }
 

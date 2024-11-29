@@ -237,14 +237,23 @@ footer#mobile {
   display: none;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1080px) {
   header {
     nav.navbar {
       h1 {
         display: none;
       }
-      img {
-        font-size: 30px;
+      div {
+        img {
+          height: 35px;
+          width: 35px;
+        }
+      }
+      div.center {
+        img {
+          height: 50px;
+          width: 50px;
+        }
       }
     }
   }
@@ -271,11 +280,88 @@ footer#mobile {
   }
   footer#mobile {
     display: flex;
-    flex-direction: row;
-    section.resaux {
-      padding: 2em;
-      width: 100dvw;
+    flex-direction: column;
+    background-color: black;
+    h3 {
+      text-align: center;
+      color: white;
+      font-size: 2em;
+      padding-bottom: 0.5em;
+    }
+    h2 {
+      color: white;
+    }
+    section#reseaux {
       background-color: white;
+      display: flex;
+      justify-content: space-around;
+      padding: 0.5em;
+      img {
+        width: 50px;
+        height: 50px;
+      }
+      div.reseaux {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+      }
+      div.icon {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        border-left: 1px solid black;
+        margin-left: -1em;
+        padding-left: 1em;
+      }
+    }
+    section.info {
+      border-bottom: 1px solid white;
+      padding: 1em 0 0 1em;
+      ul {
+        display: flex;
+        text-decoration: none;
+        list-style: none;
+        gap: 1em;
+        align-items: center;
+        margin-bottom: 1em;
+        gap: 3em;
+        li {
+          a {
+            font-size: 24px;
+            font-weight: lighter;
+            font-family: "NotoSans", sans-serif;
+            color: white;
+          }
+        }
+      }
+    }
+    section.newsletter {
+      border-top: 1px solid white;
+      width: 100%;
+      text-align: center;
+      img {
+        height: 50px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        height: 65px;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        input {
+          text-align: center;
+          color: #6d6d6d;
+          border: 1px solid white;
+        }
+        button {
+          background-color: white;
+          border: 1px solid white;
+          color: black;
+        }
+      }
     }
   }
 }

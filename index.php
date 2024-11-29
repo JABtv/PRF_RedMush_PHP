@@ -1,9 +1,16 @@
 <?php
 $request_uri = $_SERVER['REQUEST_URI'];
 
-if ($request_uri == '/PRF_RedMush_PHP/' || 'redmush.fr') {
-    include 'app/controllers/_Accueil.php';
-} else {
-    include 'app/views/error/_404.php'; // Page non trouvée
+switch ($request_uri ) {
+    case '/PRF_RedMush_PHP/':
+    case 'redmush.fr':
+        include 'app/controllers/_Accueil.php';
+        break;
+    case '/PRF_RedMush_PHP/app/controllers/_Inscription.php':
+    case 'redmush.fr':
+        include 'app/controllers/_Inscription.php';
+        default:
+            include 'app/controllers/_404.php';
+            break;
 }
 ?>
