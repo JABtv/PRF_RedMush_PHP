@@ -6,7 +6,7 @@ echo "Requested URI: " . htmlspecialchars($request_uri); // Affiche l'URI demand
 switch ($request_uri) {
 
     case '/PRF_RedMush_PHP/':
-    case 'redmush.fr':
+    case 'redmush.fr/':
         include 'app/controllers/_Accueil.php';
         break;
 
