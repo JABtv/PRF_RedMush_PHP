@@ -156,8 +156,9 @@
               </div>
             </div>
           </div>
-          <button>VOIR PLUS</button>
+          <button class="more">VOIR PLUS</button>
         </section>
+      
       <section class="capsule">
         <img src="public/assets/images/IA_Image/capsule/capsule001.png" alt="Capsule 1"/>
         <img src="public/assets/images/IA_Image/capsule/capsule002.png" alt="Capsule 2"/>
@@ -274,7 +275,7 @@
             </div>
           </div>
         </div>
-        <button>VOIR PLUS</button>
+        <button class="more">VOIR PLUS</button>
       </section>
     </main>
 <script src="public/src/scripts/carroussel.js"></script>

@@ -27,7 +27,7 @@
     </li>
   </ul>
 </nav>
-<footer>
+<footer id="desktop">
   <section class="info">
       <h3>Info Pratique</h3>
         <ul>
@@ -73,6 +73,27 @@
       <img src="public/assets/images/icons/white/secureCard.png" alt="Icon de payment"/>
       <p>Paiement<br>Sécurisée</p>
     </div>
+  </section>
+</footer>
+<footer id="mobile">
+  <section class="resaux">
+    <a href="#">
+      <img src="public/assets/images/icons/black/iconInstagram.png" alt="Lien vers la page Instagram du site.">
+    </a>
+    <a href="#">
+      <img src="public/assets/images/icons/black/iconTiktok.png" alt="Lien vers la page TikTok du site.">
+    </a>
+    <a href="#">
+      <img src="public/assets/images/icons/black/iconYoutube.png" alt="Lien vers la page Youtube du site.">
+    </a>
+    <br>
+  </section>
+  <section class="info">
+
+  </section>
+  <h2>contact@redmush.fr</h2>
+  <section class="newlettre">
+
   </section>
 </footer>
 <body/>

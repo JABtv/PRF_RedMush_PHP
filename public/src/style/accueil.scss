@@ -101,11 +101,19 @@ main {
       grid-template-rows: 1fr;
       grid-column-gap: 6.75em;
       margin: 1em auto;
+      border-radius: 5px;
+      div.card:hover {
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Ombre plus prononcée au survol */
+      }
       div.card {
         display: flex;
         height: auto;
         width: 300px;
+        margin-bottom: 2em;
         border: solid black;
+        background-color: white;
+        transition: box-shadow 0.3s ease; /* Optionnel : transition pour un effet au survol */
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Ombre */
         div.cardContent {
           padding: 1em;
           img.cardImg {
@@ -193,13 +201,11 @@ main {
     display: flex;
     justify-content: center;
     width: 100%;
-    a {
-      img {
-        border-left: 4px 2px 4px 2px solid black;
-        width: 50%;
-        height: 100%;
-        object-fit: cover;
-      }
+
+    img {
+      border-left: 4px 2px 4px 2px solid black;
+      width: 50%;
+      height: 100%;
     }
   }
 }
@@ -207,12 +213,104 @@ main {
 //TODO VERSION MOBILE
 
 @media (max-width: 1080px) {
-  section.nouveaute {
-    div#card {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(3, 1fr);
-      grid-column-gap: 65px;
-      grid-row-gap: 65px;
+  //  NOUVEAUTE
+  main {
+    section.nouveaute,
+    section.promo {
+      width: auto;
+      margin: 2em;
+      h2 {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      div#card {
+        overflow: auto;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 1em;
+        margin: 1em auto;
+        border-radius: 5px;
+        width: 300px;
+        div.card {
+          height: auto;
+          width: 233px;
+          margin-bottom: 1em;
+          div.cardContent {
+            padding: 1em;
+            img.cardImg {
+              width: 200px;
+              height: 250px;
+            }
+            div.colors {
+              display: flex;
+              justify-content: space-between;
+              input {
+                border: 1px solid black;
+                height: 30px;
+                width: 30px;
+                cursor: pointer;
+              }
+              button {
+                margin-right: 0;
+                height: 30px;
+                width: 65px;
+                cursor: pointer;
+                background-color: black;
+                border: 1px solid black;
+                img {
+                  width: 30px;
+                  object-fit: cover;
+                  aspect-ratio: 1/1;
+                }
+              }
+              input:hover,
+              button:hover {
+                border: 1px solid white;
+              }
+              input:active,
+              button:active {
+                border: 1px solid black;
+              }
+              .white {
+                background-color: white;
+              }
+              .black {
+                background-color: black;
+              }
+              .red {
+                background-color: $red;
+              }
+            }
+          }
+        }
+      }
+      button {
+        height: 50px;
+        width: 200px;
+        display: block;
+        margin: 0 auto;
+        border: 1px solid black;
+        font-size: 24px;
+      }
+      button:hover {
+        border: 1px solid white;
+      }
+      button:active {
+        border: 2px solid $red;
+      }
+    }
+
+    section.capsule {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+
+      img {
+        border-left: 4px 2px 4px 2px solid black;
+        width: 50%;
+        height: 100%;
+      }
     }
   }
 }

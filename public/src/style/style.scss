@@ -78,6 +78,25 @@ button:active {
   border: $red;
 }
 
+//SCROLLBAR
+
+/* Pour les barres de défilement dans WebKit */
+::-webkit-scrollbar {
+  width: 10px; /* largeur de la barre de défilement */
+}
+
+::-webkit-scrollbar-track {
+  background: $white; /* couleur de la piste */
+}
+
+::-webkit-scrollbar-thumb {
+  background: black; /* couleur du pouce */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $black; /* couleur du pouce au survol */
+}
+
 /* HEADER */
 
 header {
@@ -179,11 +198,6 @@ footer {
   a {
     color: white;
   }
-  section {
-    h3 {
-      margin: 0 0 1em 0;
-    }
-  }
   section.info {
     ul {
       display: flex;
@@ -215,6 +229,53 @@ footer {
     div {
       display: flex;
       gap: 0.5em;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  header {
+    nav.navbar {
+      h1 {
+        display: none;
+      }
+      img {
+        font-size: 30px;
+      }
+    }
+  }
+
+  nav.navFooter {
+    padding: 0;
+    ul {
+      background-color: black;
+      flex-direction: column;
+      gap: 0;
+      li {
+        padding: 1em 0 1em 1em;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+
+  footer#desktop {
+    display: none;
+  }
+  footer#mobile {
+    display: flex;
+    flex-direction: row;
+    section.resaux {
+      padding: 2em;
+      width: 100dvw;
+      background-color: white;
+      br {
+        border: solid black;
+        rotate: 180deg;
+      }
     }
   }
 }

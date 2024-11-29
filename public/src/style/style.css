@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Oswald";
   src: url("public/assets/fonts/Oswald.ttf");
@@ -54,6 +55,23 @@ button:hover {
 
 button:active {
   border: #d71c10;
+}
+
+/* Pour les barres de défilement dans WebKit */
+::-webkit-scrollbar {
+  width: 10px; /* largeur de la barre de défilement */
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0; /* couleur de la piste */
+}
+
+::-webkit-scrollbar-thumb {
+  background: black; /* couleur du pouce */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0e0e0e; /* couleur du pouce au survol */
 }
 
 /* HEADER */
@@ -147,9 +165,6 @@ footer p,
 footer a {
   color: white;
 }
-footer section h3 {
-  margin: 0 0 1em 0;
-}
 footer section.info ul {
   display: flex;
   text-decoration: none;
@@ -173,6 +188,47 @@ footer section.newsletter form input {
 footer section.right div {
   display: flex;
   gap: 0.5em;
+}
+
+@media (max-width: 800px) {
+  header nav.navbar h1 {
+    display: none;
+  }
+  header nav.navbar img {
+    font-size: 30px;
+  }
+  nav.navFooter {
+    padding: 0;
+  }
+  nav.navFooter ul {
+    background-color: black;
+    flex-direction: column;
+    gap: 0;
+  }
+  nav.navFooter ul li {
+    padding: 1em 0 1em 1em;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+  nav.navFooter ul li a {
+    color: white;
+  }
+  footer#desktop {
+    display: none;
+  }
+  footer#mobile {
+    display: flex;
+    flex-direction: row;
+  }
+  footer#mobile section.resaux {
+    padding: 2em;
+    width: 100dvw;
+    background-color: white;
+  }
+  footer#mobile section.resaux br {
+    border: solid black;
+    rotate: 180deg;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

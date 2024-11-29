@@ -1,3 +1,4 @@
+@charset "UTF-8";
 main section.carousel {
   background-color: white;
   white-space: 100dvw;
@@ -85,13 +86,22 @@ main section.promo div#card {
   grid-template-rows: 1fr;
   grid-column-gap: 6.75em;
   margin: 1em auto;
+  border-radius: 5px;
+}
+main section.nouveaute div#card div.card:hover,
+main section.promo div#card div.card:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Ombre plus prononcée au survol */
 }
 main section.nouveaute div#card div.card,
 main section.promo div#card div.card {
   display: flex;
   height: auto;
   width: 300px;
+  margin-bottom: 2em;
   border: solid black;
+  background-color: white;
+  transition: box-shadow 0.3s ease; /* Optionnel : transition pour un effet au survol */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Ombre */
 }
 main section.nouveaute div#card div.card div.cardContent,
 main section.promo div#card div.card div.cardContent {
@@ -196,19 +206,126 @@ main section.capsule {
   justify-content: center;
   width: 100%;
 }
-main section.capsule a img {
+main section.capsule img {
   border-left: 4px 2px 4px 2px solid black;
   width: 50%;
   height: 100%;
-  object-fit: cover;
 }
 
 @media (max-width: 1080px) {
-  section.nouveaute div#card {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 65px;
-    grid-row-gap: 65px;
+  main section.nouveaute,
+  main section.promo {
+    width: auto;
+    margin: 2em;
+  }
+  main section.nouveaute h2,
+  main section.promo h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  main section.nouveaute div#card,
+  main section.promo div#card {
+    overflow: auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 1em;
+    margin: 1em auto;
+    border-radius: 5px;
+    width: 300px;
+  }
+  main section.nouveaute div#card div.card,
+  main section.promo div#card div.card {
+    height: auto;
+    width: 233px;
+    margin-bottom: 1em;
+  }
+  main section.nouveaute div#card div.card div.cardContent,
+  main section.promo div#card div.card div.cardContent {
+    padding: 1em;
+  }
+  main section.nouveaute div#card div.card div.cardContent img.cardImg,
+  main section.promo div#card div.card div.cardContent img.cardImg {
+    width: 200px;
+    height: 250px;
+  }
+  main section.nouveaute div#card div.card div.cardContent div.colors,
+  main section.promo div#card div.card div.cardContent div.colors {
+    display: flex;
+    justify-content: space-between;
+  }
+  main section.nouveaute div#card div.card div.cardContent div.colors input,
+  main section.promo div#card div.card div.cardContent div.colors input {
+    border: 1px solid black;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+  }
+  main section.nouveaute div#card div.card div.cardContent div.colors button,
+  main section.promo div#card div.card div.cardContent div.colors button {
+    margin-right: 0;
+    height: 30px;
+    width: 65px;
+    cursor: pointer;
+    background-color: black;
+    border: 1px solid black;
+  }
+  main section.nouveaute div#card div.card div.cardContent div.colors button img,
+  main section.promo div#card div.card div.cardContent div.colors button img {
+    width: 30px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+  }
+  main section.nouveaute div#card div.card div.cardContent div.colors input:hover,
+  main section.nouveaute div#card div.card div.cardContent div.colors button:hover,
+  main section.promo div#card div.card div.cardContent div.colors input:hover,
+  main section.promo div#card div.card div.cardContent div.colors button:hover {
+    border: 1px solid white;
+  }
+  main section.nouveaute div#card div.card div.cardContent div.colors input:active,
+  main section.nouveaute div#card div.card div.cardContent div.colors button:active,
+  main section.promo div#card div.card div.cardContent div.colors input:active,
+  main section.promo div#card div.card div.cardContent div.colors button:active {
+    border: 1px solid black;
+  }
+  main section.nouveaute div#card div.card div.cardContent div.colors .white,
+  main section.promo div#card div.card div.cardContent div.colors .white {
+    background-color: white;
+  }
+  main section.nouveaute div#card div.card div.cardContent div.colors .black,
+  main section.promo div#card div.card div.cardContent div.colors .black {
+    background-color: black;
+  }
+  main section.nouveaute div#card div.card div.cardContent div.colors .red,
+  main section.promo div#card div.card div.cardContent div.colors .red {
+    background-color: #d71c10;
+  }
+  main section.nouveaute button,
+  main section.promo button {
+    height: 50px;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid black;
+    font-size: 24px;
+  }
+  main section.nouveaute button:hover,
+  main section.promo button:hover {
+    border: 1px solid white;
+  }
+  main section.nouveaute button:active,
+  main section.promo button:active {
+    border: 2px solid #d71c10;
+  }
+  main section.capsule {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  main section.capsule img {
+    border-left: 4px 2px 4px 2px solid black;
+    width: 50%;
+    height: 100%;
   }
 }
 
