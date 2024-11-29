@@ -86,7 +86,8 @@ main section.promo div#card {
   margin: 1em auto;
   border-radius: 5px;
   gap: 3em;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 100%;
 }
 main section.nouveaute div#card div.card:hover,
 main section.promo div#card div.card:hover {
@@ -228,8 +229,6 @@ main section.capsule img {
     overflow: auto;
     display: flex;
     margin: 1em auto;
-    border-radius: 5px;
-    width: 300px;
   }
   main section.nouveaute div#card div.card,
   main section.promo div#card div.card {

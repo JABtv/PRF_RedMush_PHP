@@ -139,55 +139,59 @@ nav.navFooter ul a {
   font-size: 24px;
 }
 
-footer {
+footer#desktop {
   background-color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 2em;
 }
-footer img {
+footer#desktop img {
   height: 2em;
   width: 2em;
 }
-footer h3 {
+footer#desktop h3 {
   font-weight: normal;
   align-items: start;
 }
-footer a {
+footer#desktop a {
   font-weight: lighter;
 }
-footer p {
+footer#desktop p {
   font-family: "Oswald", sans-serif;
 }
-footer h3,
-footer p,
-footer a {
+footer#desktop h3,
+footer#desktop p,
+footer#desktop a {
   color: white;
 }
-footer section.info ul {
+footer#desktop section.info ul {
   display: flex;
   text-decoration: none;
   list-style: none;
   gap: 1em;
   align-items: center;
 }
-footer section.info ul a {
+footer#desktop section.info ul a {
   font-family: "NotoSans", sans-serif;
 }
-footer section.newsletter form {
+footer#desktop section.newsletter form {
   display: flex;
   flex-direction: column;
   gap: 0.25em;
 }
-footer section.newsletter form input {
+footer#desktop section.newsletter form input {
   text-align: center;
   color: #6d6d6d;
   border: 1px solid white;
 }
-footer section.right div {
+footer#desktop section.right div {
   display: flex;
   gap: 0.5em;
+}
+
+footer#mobile {
+  display: none;
 }
 
 @media (max-width: 800px) {

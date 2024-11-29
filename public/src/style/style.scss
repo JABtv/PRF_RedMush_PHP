@@ -173,7 +173,7 @@ nav.navFooter {
   }
 }
 
-footer {
+footer#desktop {
   background-color: black;
   display: flex;
   justify-content: space-between;
@@ -231,6 +231,10 @@ footer {
       gap: 0.5em;
     }
   }
+}
+
+footer#mobile {
+  display: none;
 }
 
 @media (max-width: 800px) {

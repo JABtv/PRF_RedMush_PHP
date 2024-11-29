@@ -75,6 +75,8 @@
     </div>
   </section>
 </footer>
+
+
 <footer id="mobile">
   <section class="resaux">
     <a href="#">

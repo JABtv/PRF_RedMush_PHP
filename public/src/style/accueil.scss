@@ -101,7 +101,8 @@ main {
       margin: 1em auto;
       border-radius: 5px;
       gap: 3em;
-      justify-content: space-around;
+      justify-content: space-between;
+      width: 100%;
       div.card:hover {
         box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Ombre plus prononcée au survol */
       }
@@ -227,8 +228,6 @@ main {
         overflow: auto;
         display: flex;
         margin: 1em auto;
-        border-radius: 5px;
-        width: 300px;
         div.card {
           height: auto;
           width: 233px;
