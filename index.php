@@ -1,12 +1,10 @@
 <?php
 $request_uri = $_SERVER['REQUEST_URI'];
-echo "Requested URI: " . htmlspecialchars($request_uri); // Affiche l'URI demandée
 
 // Normaliser l'URI pour le switch
 switch ($request_uri) {
-
     case '/PRF_RedMush_PHP/':
-    case 'redmush.fr/':
+    case 'redmush.fr':
         include 'app/controllers/_Accueil.php';
         break;
 
