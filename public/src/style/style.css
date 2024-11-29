@@ -225,10 +225,6 @@ footer section.right div {
     width: 100dvw;
     background-color: white;
   }
-  footer#mobile section.resaux br {
-    border: solid black;
-    rotate: 180deg;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
