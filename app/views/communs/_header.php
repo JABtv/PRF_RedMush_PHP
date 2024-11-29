@@ -16,7 +16,7 @@
     <p>FRAIS DE PORT OFFERTS À PARTIR DE 80€</p>
     <nav class="navbar">
       <div class="left">
-        <a href="app/controllers/_Inscription.php">
+        <a href="Inscription">
           <img
             src="public/assets/images/icons/black/iconUser.png"
             alt="User" />
