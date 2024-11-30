@@ -4,7 +4,7 @@ $request_uri = $_SERVER['REQUEST_URI'];
 // Normaliser l'URI pour le switch
 switch ($request_uri) {
     case "/PRF_RedMush_PHP/":
-    case "https://www.redmush.fr/":
+    case "www.redmush.fr/":
         include "app/controllers/_Accueil.php";
         break;
 
