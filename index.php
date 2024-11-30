@@ -1,10 +1,11 @@
 <?php
 $request_uri = $_SERVER['REQUEST_URI'];
+echo "Requested URI: " . htmlspecialchars($request_uri);
 
 // Normaliser l'URI pour le switch
 switch ($request_uri) {
     case  '/PRF_RedMush_PHP/':
-    case 'redmush.fr/index.php':
+    case 'redmush.fr/':
         include 'app/controllers/_Accueil.php';
         break;
 
@@ -14,7 +15,7 @@ switch ($request_uri) {
         break;
 
     default:
-        include 'app/views/error/_404.php'; // Page non trouvée
+        include 'app/views/error/_40w4.php'; // Page non trouvée
         break;
 }
 ?>
