@@ -1,3 +1,4 @@
+<title>Error 404</title>
 <link rel="stylesheet" href="public/src/style/404.css">
 <figure>
     <div class="sad-mac"></div>
