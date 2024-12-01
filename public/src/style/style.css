@@ -57,6 +57,18 @@ button:active {
   border: #d71c10;
 }
 
+[popover] {
+  position: fixed;
+  inset: 0;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  border: solid;
+  padding: 0.25em;
+  overflow: auto;
+  color: CanvasText;
+}
+
 /* Pour les barres de défilement dans WebKit */
 ::-webkit-scrollbar {
   width: 10px; /* largeur de la barre de défilement */
@@ -78,6 +90,12 @@ button:active {
 header {
   background-color: #000;
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px #0e0e0e;
 }
 header p {
   color: #fff;
@@ -91,12 +109,123 @@ header nav.navbar {
   background-color: #fff;
   display: flex;
   justify-content: space-between;
-  padding: 0 2em 0 2em;
+  padding: 0 2em;
 }
-header nav.navbar div {
+header nav.navbar div.left,
+header nav.navbar div.right,
+header nav.navbar div.center {
   display: flex;
   text-align: center;
   align-items: center;
+}
+header nav.navbar div.left button,
+header nav.navbar div.right button,
+header nav.navbar div.center button {
+  border: none;
+  background-color: transparent;
+}
+header nav.navbar div#userPop:popover-open {
+  width: 361px;
+  height: 200px;
+  position: fixed;
+  inset: unset;
+  top: 0;
+  left: 0;
+  margin-top: 79px;
+  flex-direction: column;
+  justify-content: center;
+}
+header nav.navbar div#userPop:popover-open form {
+  display: flex;
+  flex-direction: column;
+}
+header nav.navbar div#userPop:popover-open form input {
+  height: 20px;
+  border: 1px solid #0e0e0e;
+  margin: 0.5em;
+  padding-left: 1em;
+}
+header nav.navbar div#userPop:popover-open form button {
+  background-color: black;
+  border: 1px solid black;
+  padding: 0.5em;
+}
+header nav.navbar div#userPop:popover-open form div {
+  margin: -1em 1em 1em 1em;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+header nav.navbar div#shopPop:popover-open {
+  width: 50%;
+  height: 100%;
+  position: fixed;
+  inset: unset;
+  top: 0;
+  left: 0;
+}
+header nav.navbar div#shopPop:popover-open button {
+  color: black;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+}
+header nav.navbar div#shopPop:popover-open div.header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px solid black;
+  margin: 1em;
+}
+header nav.navbar div#menuPop:popover-open {
+  width: 50%;
+  height: 100%;
+  position: fixed;
+  inset: unset;
+  top: 0;
+  right: 0;
+}
+header nav.navbar div#menuPop:popover-open button {
+  color: black;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+}
+header nav.navbar div#menuPop:popover-open div.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em;
+}
+header nav.navbar div#menuPop:popover-open div.header h2 {
+  font-size: 2.5em;
+}
+header nav.navbar div#menuPop:popover-open form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+}
+header nav.navbar div#menuPop:popover-open form input {
+  width: 100%;
+  height: 40px;
+  font-size: 2em;
+  border: none;
+  border-bottom: 2px solid black;
+  margin: 0 1em;
+}
+header nav.navbar div#menuPop:popover-open ul li {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5em;
+  text-decoration: none;
+  text-align: right;
+  border-top: 1px solid #afafaf;
+  margin: 1em;
+}
+header nav.navbar div#menuPop:popover-open ul li a {
+  color: black;
+}
+header nav.navbar div#menuPop:popover-open ul li.bb {
+  border-top: 2px solid black;
+}
+header nav.navbar div.center {
+  margin-right: 5em;
 }
 header nav.navbar div.center h1 {
   font-family: "Oswald", sans-serif;
@@ -111,13 +240,6 @@ header nav.navbar img {
   cursor: pointer;
   padding: 0;
   margin: 0;
-}
-header nav.navbar input {
-  display: none;
-}
-header nav.navbar button {
-  border: none;
-  background-color: transparent;
 }
 
 /* FOOTER */

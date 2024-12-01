@@ -78,6 +78,18 @@ button:active {
   border: $red;
 }
 
+[popover] {
+  position: fixed;
+  inset: 0;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  border: solid;
+  padding: 0.25em;
+  overflow: auto;
+  color: CanvasText;
+}
+
 //SCROLLBAR
 
 /* Pour les barres de défilement dans WebKit */
@@ -102,7 +114,12 @@ button:active {
 header {
   background-color: #000;
   width: 100%;
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px $black;
   p {
     color: #fff;
     background-color: black;
@@ -116,14 +133,128 @@ header {
     background-color: #fff;
     display: flex;
     justify-content: space-between;
-    padding: 0 2em 0 2em;
-    div {
+    padding: 0 2em;
+    div.left,
+    div.right,
+    div.center {
       display: flex;
       text-align: center;
       align-items: center;
+      button {
+        border: none;
+        background-color: transparent;
+      }
+    }
+
+    div#userPop:popover-open {
+      width: 361px;
+      height: 200px;
+      position: fixed;
+      inset: unset;
+      top: 0;
+      left: 0;
+      margin-top: 79px;
+      flex-direction: column;
+      justify-content: center;
+      form {
+        display: flex;
+        flex-direction: column;
+        input {
+          height: 20px;
+          border: 1px solid $black;
+          margin: 0.5em;
+          padding-left: 1em;
+        }
+        button {
+          background-color: black;
+          border: 1px solid black;
+          padding: 0.5em;
+        }
+        div {
+          margin: -1em 1em 1em 1em;
+          text-align: center;
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+
+    div#shopPop:popover-open {
+      width: 50%;
+      height: 100%;
+      position: fixed;
+      inset: unset;
+      top: 0;
+      left: 0;
+      button {
+        color: black;
+        font-family: "Oswald", sans-serif;
+        font-size: 24px;
+      }
+      div.header {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 3px solid black;
+        margin: 1em;
+      }
+    }
+
+    div#menuPop:popover-open {
+      width: 50%;
+      height: 100%;
+      position: fixed;
+      inset: unset;
+      top: 0;
+      right: 0;
+
+      button {
+        color: black;
+        font-family: "Oswald", sans-serif;
+        font-size: 24px;
+      }
+      div.header {
+        display: flex;
+        justify-content: space-between;
+        margin: 1em;
+        h2 {
+          font-size: 2.5em;
+        }
+      }
+      form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1em;
+        input {
+          width: 100%;
+          height: 40px;
+          font-size: 2em;
+          border: none;
+          border-bottom: 2px solid black;
+          margin: 0 1em;
+        }
+      }
+      ul {
+        li {
+          font-family: "Oswald", sans-serif;
+          font-size: 2.5em;
+          text-decoration: none;
+          text-align: right;
+          border-top: 1px solid #afafaf;
+          margin: 1em;
+
+          a {
+            color: black;
+          }
+        }
+        li.bb {
+          border-top: 2px solid black;
+        }
+      }
     }
 
     div.center {
+      margin-right: 5em;
       h1 {
         font-family: "Oswald", sans-serif;
         cursor: pointer;
@@ -140,15 +271,6 @@ header {
       cursor: pointer;
       padding: 0;
       margin: 0;
-    }
-
-    input {
-      display: none;
-    }
-
-    button {
-      border: none;
-      background-color: transparent;
     }
   }
 }

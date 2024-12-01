@@ -216,6 +216,9 @@ main {
 @media (max-width: 1080px) {
   //  NOUVEAUTE
   main {
+    div.carouselBtn {
+      display: none;
+    }
     section.nouveaute,
     section.promo {
       width: auto;
