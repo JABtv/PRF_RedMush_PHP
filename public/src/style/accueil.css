@@ -214,7 +214,7 @@ main section.capsule img {
 }
 
 @media (max-width: 1080px) {
-  main div.carouselBtn {
+  main div.carouselBtn button {
     display: none;
   }
   main section.nouveaute,

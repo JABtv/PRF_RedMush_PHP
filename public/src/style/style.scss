@@ -251,6 +251,17 @@ header {
           border-top: 2px solid black;
         }
       }
+      div.reseaux {
+        align-content: center;
+        margin: 0 2.5em;
+        border-top: 2px solid black;
+        height: 20%;
+        img {
+          margin: 2em 1em;
+          height: 50px;
+          width: 50px;
+        }
+      }
     }
 
     div.center {
@@ -371,7 +382,14 @@ footer#mobile {
           width: 35px;
         }
       }
+      div#shopPop:popover-open {
+        width: 100%;
+      }
+      div#menuPop:popover-open {
+        width: 100%;
+      }
       div.center {
+        margin-right: 1em;
         img {
           height: 50px;
           width: 50px;

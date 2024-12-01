@@ -224,6 +224,17 @@ header nav.navbar div#menuPop:popover-open ul li a {
 header nav.navbar div#menuPop:popover-open ul li.bb {
   border-top: 2px solid black;
 }
+header nav.navbar div#menuPop:popover-open div.reseaux {
+  align-content: center;
+  margin: 0 2.5em;
+  border-top: 2px solid black;
+  height: 20%;
+}
+header nav.navbar div#menuPop:popover-open div.reseaux img {
+  margin: 2em 1em;
+  height: 50px;
+  width: 50px;
+}
 header nav.navbar div.center {
   margin-right: 5em;
 }
@@ -323,6 +334,15 @@ footer#mobile {
   header nav.navbar div img {
     height: 35px;
     width: 35px;
+  }
+  header nav.navbar div#shopPop:popover-open {
+    width: 100%;
+  }
+  header nav.navbar div#menuPop:popover-open {
+    width: 100%;
+  }
+  header nav.navbar div.center {
+    margin-right: 1em;
   }
   header nav.navbar div.center img {
     height: 50px;

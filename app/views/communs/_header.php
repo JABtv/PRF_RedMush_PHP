@@ -77,7 +77,7 @@
             </button>
           </div>
           <form action="" method="post">
-            <input type="search" id="searchBar"/>
+            <input type="search" id="searchBar" placeholder="Rechercher un article"/>
             <button type="submit">
               <img src="public/assets/images/icons/black/iconSearch.png" alt="Icon de recherche"/>
             </button>
@@ -105,6 +105,17 @@
               <a href="#">CAPSULE</a>
             </li>
           </ul>
+          <div class="reseaux">
+            <a href="#">
+              <img src="public/assets/images/icons/black/iconInstagram.png" alt="Lien vers la page Instagram du site.">
+            </a>
+            <a href="#">
+              <img src="public/assets/images/icons/black/iconTiktok.png" alt="Lien vers la page TikTok du site.">
+            </a>
+            <a href="#">
+              <img src="public/assets/images/icons/black/iconYoutube.png" alt="Lien vers la page Youtube du site.">
+            </a>
+          </div>
         </div>
       </div>
     </nav>
